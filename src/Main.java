@@ -18,14 +18,20 @@ public class Main {
                     
                     """);
                     opcion=scanner.nextInt();
+
             switch(opcion){
-                case 1:System.out.println("Numero mayor");
+                case 1:
+                    new ExamenFinalVarianteC().numeroMayor();
                 break;
-                case 2:System.out.println("Concatenar texto");
+                case 2:
+                    new ExamenFinalVarianteC().concatenarTexto();
                 break;
-                case 3:System.out.println("Calculadora");
+                case 3:
+                    //new ExamenFinalVarianteC().calculadora();
+                    System.out.println(new ExamenFinalVarianteC().calculadora());
                 break;
-                case 4:System.out.println("Determinar si es primo");
+                case 4:
+                    new ExamenFinalVarianteC().primos();
                 break;
                 case 5:System.out.println("Agregar estudiantes");
                 break;
@@ -37,5 +43,6 @@ public class Main {
 
             }
         }
+
     }
 }
